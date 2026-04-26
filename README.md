@@ -10,58 +10,54 @@ Android app development study repository.
 
 ## Installation
 
-### 1. Install Homebrew
+1. Install [Homebrew](https://brew.sh/)
 
-If you haven't installed [Homebrew](https://brew.sh/) yet:
+    ```sh
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
 
-```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
+2. Install Android Studio
 
-### 2. Install Android Studio
+    ```sh
+    brew install --cask android-studio
+    ```
 
-Install Android Studio using Homebrew Cask:
+    Alternatively, download it directly from the [official site](https://developer.android.com/studio).
 
-```sh
-brew install --cask android-studio
-```
+3. Initial Setup of Android Studio
 
-Alternatively, download it directly from the [official site](https://developer.android.com/studio).
+    1. Launch Android Studio.
+    2. Follow the **Setup Wizard** to install the Android SDK, build tools, and an emulator image.
+    3. Accept all SDK licenses when prompted.
 
-### 3. Initial Setup of Android Studio
+4. Configure Environment Variables
 
-1. Launch Android Studio.
-2. Follow the **Setup Wizard** to install the Android SDK, build tools, and an emulator image.
-3. Accept all SDK licenses when prompted.
+    Add the Android SDK path to your shell configuration file (`~/.zshrc` or `~/.bash_profile`):
 
-### 4. Configure Environment Variables
+    ```sh
+    export ANDROID_HOME=$HOME/Library/Android/sdk
+    export PATH=$PATH:$ANDROID_HOME/tools
+    export PATH=$PATH:$ANDROID_HOME/tools/bin
+    export PATH=$PATH:$ANDROID_HOME/platform-tools
+    ```
 
-Add the Android SDK path to your shell configuration file (`~/.zshrc` or `~/.bash_profile`):
+    Reload the configuration:
 
-```sh
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-```
+    ```sh
+    source ~/.zshrc
+    ```
 
-Reload the configuration:
+    Verify `adb` is available:
 
-```sh
-source ~/.zshrc
-```
+    ```sh
+    adb version
+    ```
 
-Verify `adb` is available:
+5. Create an Android Virtual Device (AVD)
 
-```sh
-adb version
-```
-
-### 5. Create an Android Virtual Device (AVD)
-
-1. Open Android Studio.
-2. Go to **Device Manager** (from the main toolbar or **Tools > Device Manager**).
-3. Click **Create Device** and follow the wizard to set up an emulator.
+    1. Open Android Studio.
+    2. Go to **Device Manager** (from the main toolbar or **Tools > Device Manager**).
+    3. Click **Create Device** and follow the wizard to set up an emulator.
 
 ## Projects
 
