@@ -39,7 +39,7 @@ A minimal Android Hello World app built with Kotlin.
 
 ## Project Structure
 
-```
+```text
 helloworld/
 ├── app/
 │   └── src/
@@ -66,6 +66,6 @@ helloworld/
 
 When the app is launched, the screen will display:
 
-```
+```text
 Hello, World!
 ```
