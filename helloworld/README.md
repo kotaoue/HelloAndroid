@@ -2,12 +2,6 @@
 
 A minimal Android Hello World app built with Kotlin.
 
-## Features
-
-- Displays "Hello, World!" in the center of the screen
-- Built with Kotlin and the standard Android View system
-- Uses Material Design theme
-
 ## Requirements
 
 - Android Studio (Hedgehog or later recommended)
