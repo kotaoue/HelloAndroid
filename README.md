@@ -62,5 +62,5 @@ Android app development study repository.
 ## Projects
 
 | Directory | Description |
-|-----------|-------------|
+| ----------- | ------------- |
 | [helloworld](./helloworld) | Minimal Hello World Android app |
