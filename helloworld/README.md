@@ -15,8 +15,8 @@ A minimal Android Hello World app built with Kotlin.
 1. Open Android Studio and select **Open** (or **File > Open**).
 2. Navigate to this directory (`helloworld/`) and click **OK**.
 3. Wait for the Gradle sync to complete.
-4. Select a device or emulator from the **Device Manager**.
-5. Click the **Run** button (▶) or press `Shift + F10`.
+4. Open **Device Manager** from the toolbar or via **Tools > Device Manager**, then start an emulator by clicking the launch button (▶) next to the device.
+5. Once the emulator is running, click the **Run** button (▶) in the toolbar or press `Shift + F10`.
 
 ### Using the Command Line
 
