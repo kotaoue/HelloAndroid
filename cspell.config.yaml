@@ -3,6 +3,8 @@ ignorePaths: []
 dictionaryDefinitions: []
 dictionaries: []
 words:
+  - androidx
+  - appcompat
   - gradlew
 ignoreWords: []
 import: []
